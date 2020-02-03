@@ -39,7 +39,30 @@ public class ModuloOfTwoNumbers {
 
 public class ModuloOfTwoNumbers {
     public static float remainder(float dividend, float divisor){
-        return (dividend - divisor * (dividend / divisor));
+        // Handle divisor equals to 0 case 
+        if (divisor == 0) { 
+            System.out.println("Error: divisor "
+                               + "can't be zero \n"); 
+            return -1; 
+        } 
+  
+        // Handle negative values 
+        if (divisor < 0) 
+            divisor = -divisor; 
+        if (dividend < 0) 
+            dividend = -dividend; 
+  
+        // Find the largest product of 'divisor' 
+        // that is smaller than or equal to 'dividend' 
+        float i = 1; 
+        float product = 0; 
+        while (product <= dividend) { 
+            product = divisor * i; 
+            i++; 
+        } 
+  
+        // return remainder 
+        return dividend - (product - divisor);
     }
 
     public static void main(String[] args) {
