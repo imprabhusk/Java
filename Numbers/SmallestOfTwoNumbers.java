@@ -11,26 +11,26 @@ public class SmallestOfTwoNumbers {
         System.out.print("Enter the Second Number : ");
         int second = input.nextInt();
 
-        System.out.println(first > second ? (second + " is Smallest Number") : (first + " is Smallest Number"));
+        System.out.println("Smallest Number is = " + (first > second ? second : first));
         input.close();
     }
 }
 
 // Method - 2 (Using Method)
 
-public class SmallestOfTwoNumbers {
-    public static String greater(int first, int second){
-        return (first > second ? (second + " is Smallest Number") : (first + " is Smallest Number"));
-    }
+// public class SmallestOfTwoNumbers {
+//     public static int smallest(int first, int second){
+//         return (first > second ? second : first);
+//     }
 
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter the First Number : ");
-        int first = input.nextInt();
-        System.out.print("Enter the Second Number : ");
-        int second = input.nextInt();
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter the First Number : ");
+//         int first = input.nextInt();
+//         System.out.print("Enter the Second Number : ");
+//         int second = input.nextInt();
 
-        System.out.println(greater(first, second));
-        input.close();
-    }
-}
+//         System.out.println("Smallest Number is = "+ smallest(first, second));
+//         input.close();
+//     }
+// }

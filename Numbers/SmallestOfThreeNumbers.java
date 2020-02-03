@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // Method - 1
 
-public class GreatestOfTwoNumbers {
+public class SmallestOfThreeNumbers {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -10,17 +10,20 @@ public class GreatestOfTwoNumbers {
         int first = input.nextInt();
         System.out.print("Enter the Second Number : ");
         int second = input.nextInt();
+        System.out.print("Enter the Third Number : ");
+        int third = input.nextInt();
 
-        System.out.println("Greater Number is = " + (first > second ? first: second));
+        System.out.println("Smallest Number is = " + (first < second ? (first < third ? first : third) : (second < third ? second : third)));
         input.close();
     }
 }
 
 // Method - 2 (Using Method)
 
-public class GreatestOfTwoNumbers {
-    public static int greater(int first, int second){
-        return (first > second ? first : second);
+public class SmallestOfThreeNumbers {
+    public static int greater(int first, int second, int third){
+        int result = first > second ? (first > third ? first : third) : (second > third ? second : third);
+        return result;
     }
 
     public static void main(String[] args) {
@@ -29,8 +32,10 @@ public class GreatestOfTwoNumbers {
         int first = input.nextInt();
         System.out.print("Enter the Second Number : ");
         int second = input.nextInt();
+        System.out.print("Enter the Third Number : ");
+        int third = input.nextInt();
 
-        System.out.println("Greater Number is = " + greater(first, second));
+        System.out.print("Greatest Number is = " + greater(first, second, third));
         input.close();
     }
 }
