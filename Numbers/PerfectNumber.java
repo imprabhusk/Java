@@ -23,9 +23,8 @@ public class PerfectNumber {
         int sum = 0;
 
         for(int i = 1; i < number; i++){
-            if(number % i == 0){
+            if(number % i == 0)
                 sum += i;
-            }
         }
 
         System.out.println(sum == number ? number + " is a Perfect Number" : number + " is Not a Perfect Number");
@@ -39,9 +38,8 @@ public class PerfectNumber {
     public static void perfectNumber(int number){
         int sum = 0;
         for(int i = 1; i < number; i++){
-            if(number % i == 0){
+            if(number % i == 0)
                 sum += i;
-            }
         }
         System.out.print(sum == number ? number + " is a Perfect Number" : number + " is Not a Perfect Number");
     }
@@ -51,6 +49,32 @@ public class PerfectNumber {
         System.out.print("Enter the Number to Find Perfect Number Or Not : ");
         int number = input.nextInt();
         perfectNumber(number);
+        input.close();
+    }
+}
+
+// Method - 3 (Using Objects)
+
+class Calculate {
+    public void perfect(int number) {
+        int sum = 0;
+        for(int i = 1; i < number; i++){
+            if(number % i == 0)
+                sum += i;
+        }
+        System.out.print(sum == number ? number + " is a Perfect Number" : number + " is Not a Perfect Number");
+    }
+}
+
+public class PerfectNumber {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number to Find Perfect Number Or Not : ");
+        int number = input.nextInt();
+
+        Calculate calc = new Calculate();
+        calc.perfect(number);
         input.close();
     }
 }
