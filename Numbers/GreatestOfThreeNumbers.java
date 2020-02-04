@@ -21,7 +21,7 @@ public class GreatestOfThreeNumbers {
 // Method - 2 (Using Method)
 
 public class GreatestOfThreeNumbers {
-    public static int greater(int first, int second, int third){
+    public static int greatestNumber(int first, int second, int third){
         int result = first > second ? (first > third ? first : third) : (second > third ? second : third);
         return result;
     }
@@ -35,7 +35,7 @@ public class GreatestOfThreeNumbers {
         System.out.print("Enter the Third Number : ");
         int third = input.nextInt();
 
-        System.out.print("Greatest of Three Numbers is = " + greater(first, second, third));
+        System.out.print("Greatest of Three Numbers is = " + greatestNumber(first, second, third));
         input.close();
     }
 }
