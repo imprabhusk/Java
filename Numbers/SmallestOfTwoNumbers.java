@@ -11,7 +11,7 @@ public class SmallestOfTwoNumbers {
         System.out.print("Enter the Second Number : ");
         int second = input.nextInt();
 
-        System.out.println("Smallest Number is = " + (first > second ? second : first));
+        System.out.println("Smallest of Two Numbers is = " + (first > second ? second : first));
         input.close();
     }
 }
@@ -19,7 +19,7 @@ public class SmallestOfTwoNumbers {
 // Method - 2 (Using Method)
 
 public class SmallestOfTwoNumbers {
-    public static int smallest(int first, int second){
+    public static int smallestNumber(int first, int second){
         return (first > second ? second : first);
     }
 
@@ -30,7 +30,7 @@ public class SmallestOfTwoNumbers {
         System.out.print("Enter the Second Number : ");
         int second = input.nextInt();
 
-        System.out.println("Smallest Number is = "+ smallest(first, second));
+        System.out.println("Smallest of Two Numbers is = "+ smallestNumber(first, second));
         input.close();
     }
 }
