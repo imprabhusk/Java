@@ -13,7 +13,7 @@ public class SmallestOfThreeNumbers {
         System.out.print("Enter the Third Number : ");
         int third = input.nextInt();
 
-        System.out.println("Smallest Number is = " + (first < second ? (first < third ? first : third) : (second < third ? second : third)));
+        System.out.println("Smallest of Three Numbers is = " + (first < second ? (first < third ? first : third) : (second < third ? second : third)));
         input.close();
     }
 }
@@ -21,7 +21,7 @@ public class SmallestOfThreeNumbers {
 // Method - 2 (Using Method)
 
 public class SmallestOfThreeNumbers {
-    public static int smallest(int first, int second, int third){
+    public static int smallestNumber(int first, int second, int third){
         int result = first > second ? (first > third ? first : third) : (second > third ? second : third);
         return result;
     }
@@ -35,7 +35,7 @@ public class SmallestOfThreeNumbers {
         System.out.print("Enter the Third Number : ");
         int third = input.nextInt();
 
-        System.out.print("Smallest Number is = " + smallest(first, second, third));
+        System.out.print("Smallest of Three Numbers is = " + smallestNumber(first, second, third));
         input.close();
     }
 }
