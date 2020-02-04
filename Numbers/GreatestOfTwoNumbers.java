@@ -19,7 +19,7 @@ public class GreatestOfTwoNumbers {
 // Method - 2 (Using Method)
 
 public class GreatestOfTwoNumbers {
-    public static int greater(int first, int second){
+    public static int greatestNumber(int first, int second){
         return (first > second ? first : second);
     }
 
@@ -30,7 +30,7 @@ public class GreatestOfTwoNumbers {
         System.out.print("Enter the Second Number : ");
         int second = input.nextInt();
 
-        System.out.println("Greatest of Two Numbers is = " + greater(first, second));
+        System.out.println("Greatest of Two Numbers is = " + greatestNumber(first, second));
         input.close();
     }
 }
