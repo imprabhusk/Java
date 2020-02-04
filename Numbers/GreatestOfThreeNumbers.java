@@ -13,7 +13,7 @@ public class GreatestOfThreeNumbers {
         System.out.print("Enter the Third Number : ");
         int third = input.nextInt();
 
-        System.out.println("Greatest Number is = " + (first > second ? (first > third ? first : third) : (second > third ? second : third)));
+        System.out.println("Greatest of Three Numbers is = " + (first > second ? (first > third ? first : third) : (second > third ? second : third)));
         input.close();
     }
 }
@@ -35,7 +35,7 @@ public class GreatestOfThreeNumbers {
         System.out.print("Enter the Third Number : ");
         int third = input.nextInt();
 
-        System.out.print("Greatest Number is = " + greater(first, second, third));
+        System.out.print("Greatest of Three Numbers is = " + greater(first, second, third));
         input.close();
     }
 }
