@@ -18,7 +18,7 @@ public class GreatestOfThreeNumbers {
     }
 }
 
-// Method - 2 (Using Method)
+// Method - 2 (Using Static Method)
 
 public class GreatestOfThreeNumbers {
     public static int greatestNumber(int first, int second, int third){
