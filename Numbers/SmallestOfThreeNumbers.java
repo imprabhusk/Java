@@ -18,7 +18,7 @@ public class SmallestOfThreeNumbers {
     }
 }
 
-// Method - 2 (Using Method)
+// Method - 2 (Using Static Method)
 
 public class SmallestOfThreeNumbers {
     public static int smallestNumber(int first, int second, int third){
