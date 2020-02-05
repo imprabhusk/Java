@@ -16,7 +16,7 @@ public class GreatestOfTwoNumbers {
     }
 }
 
-// Method - 2 (Using Method)
+// Method - 2 (Using Static Method)
 
 public class GreatestOfTwoNumbers {
     public static int greatestNumber(int first, int second){
