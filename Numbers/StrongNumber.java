@@ -8,3 +8,14 @@
 // 145 = 1 + (4 * 3 * 2 * 1) + (5 * 4 * 3 * 2 * 1)
 // 145 = 1 + 24 + 120
 // 145 = 145
+
+import java.util.Scanner;
+
+// Method - 1
+
+public class StrongNumber {
+
+    public static void main(String[] args) {
+        
+    }
+}
