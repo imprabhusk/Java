@@ -90,6 +90,22 @@ public class Hello {
 
 // output : Hello World!
 
+// Method - 9 (Using Command Line Arguements)
+
+public class Hello {
+
+    public static void main(String[] args) {
+        System.out.println(args[0] + " " + args[1]);
+    }
+}
+
+// output : 
+
+// javac Hello.java
+// java Hello "Hello" "World!"
+
+// Hello World!
+
 // Invalid Ways to Write Hello World Program in Java
 
 // Method - 1 (Without using static keyword)
