@@ -19,3 +19,13 @@ public class Hello {
         System.out.println("Hello World!");
     }
 }
+
+
+// Method - 3 Using String args[]
+
+public class Hello {
+
+    public static void main(String args[]) {
+        System.out.println("Hello World!");
+    }
+}
