@@ -38,7 +38,7 @@ public class Hello {
     }
 }
 
-// Method - 4 By Changing the places of Access Specifier and Access Modifier
+// Method - 5 By Changing the places of Access Specifier and Access Modifier
 
 public class Hello {
 
@@ -47,7 +47,7 @@ public class Hello {
     }
 }
 
-// Method - 5 Using Final Keyword
+// Method - 6 Using Final Keyword in main method
 
 public class Hello {
 
@@ -56,7 +56,7 @@ public class Hello {
     }
 }
 
-// Method - 4 Using Final in first place
+// Method - 7 Using Final keyword in first place
 
 public class Hello {
 
@@ -64,3 +64,13 @@ public class Hello {
         System.out.println("Hello World!");
     }
 }
+
+// Method - 8 Using Strictfp keyword
+
+public class Hello {
+
+    final strictfp public static void main(String... args) {
+        System.out.println("Hello World!");
+    }
+}
+
