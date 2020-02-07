@@ -55,3 +55,12 @@ public class Hello {
         System.out.println("Hello World!");
     }
 }
+
+// Method - 4 Using Final in first place
+
+public class Hello {
+
+    final public static void main(String... args) {
+        System.out.println("Hello World!");
+    }
+}
