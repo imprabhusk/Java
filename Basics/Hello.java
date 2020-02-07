@@ -47,3 +47,11 @@ public class Hello {
     }
 }
 
+// Method - 5 Using Final Keyword
+
+public class Hello {
+
+    public static final void main(String... args) {
+        System.out.println("Hello World!");
+    }
+}
