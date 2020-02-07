@@ -29,10 +29,21 @@ public class Hello {
     }
 }
 
-Method - 4 Using String... args
+// Method - 4 Using String... args
 
 public class Hello {
 
     public static void main(String... args) {
         System.out.println("Hello World!");
     }
+}
+
+// Method - 4 By Changing the places of Access Specifier and Access Modifier
+
+public class Hello {
+
+    static public void main(String... args) {
+        System.out.println("Hello World!");
+    }
+}
+
