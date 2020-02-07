@@ -78,16 +78,32 @@
 
 // Method - 1 (Without using static keyword)
 
-public class Hello {
+// public class Hello {
 
-    public void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
+//     public void main(String[] args) {
+//         System.out.println("Hello World!");
+//     }
+// }
 
 // output : 
 
-// This program compiles successfully but produce an error which is
+// This program compiles successfully but produce an error at runtime
 
 // Error: Main method is not static in class Hello, please define the main method as:
 //    public static void main(String[] args)
+
+// Method - 2 (Without using public keyword)
+
+// public class Hello {
+
+//     static void main(String[] args) {
+//         System.out.println("Hello World!");
+//     }
+// }
+
+// output :
+
+// This program compiles successfully but produce an error at runtime.
+// Error: Main method not found in class Hello, please define the main method as:
+//    public static void main(String[] args)
+// or a JavaFX application class must extend javafx.application.Application
