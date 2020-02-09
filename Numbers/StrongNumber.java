@@ -1,7 +1,7 @@
-// Java Program to Find Number is Strong Or Not
+// Java Program to Find Number is Strong Or Not.
 
 // Strong Number:
-// The Sum of the Factorial of its digits is equal to the number itself
+// The Sum of the Factorial of its digits is equal to the number itself.
 
 // Example:
 // 145 = 1! + 4! + 5!
@@ -14,9 +14,9 @@ import java.util.Scanner;
 // Method - 1
 
 public class StrongNumber {
-    public static int factorial(int number){
+    public static int factorial(int number) {
         int fact = 1;
-        for(int i = 1; i <= number; i++){
+        for (int i = 1; i <= number; i++) {
             fact = fact * i;
         }
         return fact;
@@ -28,8 +28,8 @@ public class StrongNumber {
         int number = input.nextInt();
         int temp = number;
         int sum = 0;
-        
-        while(temp != 0){
+
+        while (temp != 0) {
             int result = temp % 10;
             sum += factorial(result);
             temp /= 10;

@@ -1,12 +1,12 @@
 // Armstrong Number:
-// The Sum of the Cubes of its digits is equal to the number itself
+// The Sum of the Cubes of its digits is equal to the number itself.
 
 // Example :
 // 153 = 1^3 + 5^3 + 3^3
 // 153 = 1 + 75 + 27
 // 153 = 153
 
-// 153, 370, 371, 407 are the Armstrong Numbers
+// 153, 370, 371, 407 are the Armstrong Numbers.
 
 import java.util.Scanner;
 
@@ -22,7 +22,7 @@ public class ArmstrongNumber {
         int sum = 0;
         int result = 0;
 
-        while(temp > 0){
+        while (temp > 0) {
             result = temp % 10;
             sum += (result * result * result);
             temp /= 10;
@@ -36,13 +36,13 @@ public class ArmstrongNumber {
 // Method - 2 (Using Static Method)
 
 public class ArmstrongNumber {
-    public static void armstrong(int number){
+    public static void armstrong(int number) {
 
         int temp = number;
         int result = 0;
         int sum = 0;
 
-        while(temp > 0){
+        while (temp > 0) {
             result = temp % 10;
             sum += (result * result * result);
             temp /= 10;
