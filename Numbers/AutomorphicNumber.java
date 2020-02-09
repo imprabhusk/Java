@@ -10,23 +10,34 @@
 
 import java.util.Scanner;
 
+//Method - 1 (Using Logic)
 public class AutomorphicNumber {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the Number to Find Automorphic Number Or Not : ");
         int number = input.nextInt();
-        int result = 0;
+        int temp = number;
+        int remainder = 0;
+        int divisor = 10;
+        boolean flag = false;
 
-        int square = number * number;
+        int square = temp * temp;
 
-        while (square != 0) {
-            result = square % 10;
-            square /= 10;
+        while (temp > 0) {
+
+            remainder = square % divisor;
+            if (number == remainder) {
+                flag = true;
+                break;
+            }
+
+            temp /= 10;
+            divisor *= 10; // If it has more than one digit we need to multiply with 10
+                           // 1st iteration 10, 2nd iteration 100, 3rd iteration 1000 and so on
         }
 
-        System.out
-                .println(result == number ? number + " is Automorphic Number" : number + " is Not Automorphic Number");
+        System.out.println(flag == true ? number + " is Automorphic Number" : number + " is Not Automorphic Number");
         input.close();
     }
 }
