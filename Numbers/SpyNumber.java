@@ -13,6 +13,31 @@
 import java.util.Scanner;
 
 // Method - 1
+
+public class SpyNumber {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number to Find Spy Number Or Not : ");
+        int number = input.nextInt();
+        int temp = number;
+        int sum = 0;
+        int product = 1;
+
+        while (number > 0) {
+            int remainder = number % 10;
+            sum += remainder;
+            product *= remainder;
+            number /= 10;
+        }
+
+        System.out.println(sum == product ? temp + " is Spy Number" : temp + " is Not Spy Number");
+        input.close();
+    }
+}
+
+// Method - 2 (Using static method)
+
 public class SpyNumber {
 
     public static int add(int number, int sum) {
@@ -22,7 +47,6 @@ public class SpyNumber {
             sum += remainder;
             number /= 10;
         }
-        System.out.println("Sum is : " + sum);
         return sum;
     }
 
@@ -32,7 +56,6 @@ public class SpyNumber {
             product *= remainder;
             number /= 10;
         }
-        System.out.println("Product is : " + product);
         return product;
     }
 
