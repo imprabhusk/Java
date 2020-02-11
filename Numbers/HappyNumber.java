@@ -21,11 +21,6 @@ import java.util.Scanner;
 // Method - 1 (Using Logic)
 
 public class HappyNumber {
-
-    public static int square(int number) {
-        return number * number;
-    }
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the Number to Find Happy Number Or Not : ");
@@ -38,7 +33,7 @@ public class HappyNumber {
             sum = 0;
             while (number > 0) {
                 remainder = number % 10;
-                sum += square(remainder);
+                sum += remainder * remainder;
                 number /= 10;
             }
             number = sum;
@@ -48,5 +43,3 @@ public class HappyNumber {
         input.close();
     }
 }
-
-Method - 2 (Using Static Method)
