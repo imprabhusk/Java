@@ -48,3 +48,5 @@ public class HappyNumber {
         input.close();
     }
 }
+
+Method - 2 (Using Static Method)
