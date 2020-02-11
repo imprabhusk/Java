@@ -4,12 +4,17 @@
 // Sum of Square of the digit (until it becomes single digit) is Equal to 1
 
 // For Example :
-// 23 = 2 ^ 2 + 3 ^ 3
+// 23 = 2 ^ 2 + 3 ^ 2
 // 13 = 4 + 9
-// 13 = 1 ^ 1 + 3 ^ 3
+// 13 = 1 ^ 1 + 3 ^ 2
 // 10 = 1 + 9
 // 10 = 1 ^ 1 + 0 ^ 0
-// 1
+// 1                        // Happy Number
+
+// 42 = 4 ^ 2 + 2 ^ 2
+// 20 = 16 + 4
+// 20 = 2 ^ 2 + 0 ^ 0
+// 4                        // Not a Happy Number
 
 import java.util.Scanner;
 
