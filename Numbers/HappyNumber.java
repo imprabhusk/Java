@@ -18,6 +18,8 @@
 
 import java.util.Scanner;
 
+// Method - 1 (Using Logic)
+
 public class HappyNumber {
 
     public static int square(int number) {
