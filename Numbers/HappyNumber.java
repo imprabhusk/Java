@@ -10,3 +10,34 @@
 // 10 = 1 + 9
 // 10 = 1 ^ 1 + 0 ^ 0
 // 1
+
+import java.util.Scanner;
+
+public class HappyNumber {
+
+    public static int square(int number) {
+        return number * number;
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number to Find Happy Number Or Not : ");
+        int number = input.nextInt();
+        int temp = number;
+        int remainder;
+        int sum = 0;
+
+        while (sum != 1 && sum != 4) {
+            sum = 0;
+            while (number > 0) {
+                remainder = number % 10;
+                sum += square(remainder);
+                number /= 10;
+            }
+            number = sum;
+        }
+
+        System.out.print(sum == 1 ? temp + " is Happy Number" : temp + " is Not Happy Number");
+        input.close();
+    }
+}
