@@ -195,3 +195,8 @@ public class Hello {
 // It is an Access Modifier
 // If main method is declared static ,which means
 // main method is common for the entire program
+
+// 4.void
+// It is a return type
+// If main method has void (return type), which means
+// main method doesnot return any value
