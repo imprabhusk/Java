@@ -206,3 +206,6 @@ public class Hello {
 
 // 6.String[] args
 // Its a command line arguements
+
+// 7.System.out.println()
+// Its used to print the statement inside the double quotes " "
