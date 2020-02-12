@@ -17,7 +17,7 @@ public class Hello {
 
 public class Hello {
 
-    public static void main(String []args) {
+    public static void main(String[] args) {
         System.out.println("Hello World!");
     }
 }
@@ -99,7 +99,7 @@ public class Hello {
     }
 }
 
-// output : 
+// output :
 
 // javac Hello.java
 // java Hello "Hello" "World!"
@@ -117,12 +117,13 @@ public class Hello {
     }
 }
 
-// output : 
+// output :
 
 // This program compiles successfully but produce an error at runtime
 
-// Error: Main method is not static in class Hello, please define the main method as:
-//    public static void main(String[] args)
+// Error: Main method is not static in class Hello, please define the main
+// method as:
+// public static void main(String[] args)
 
 // Method - 2 (Without using public keyword)
 
@@ -137,11 +138,13 @@ public class Hello {
 
 // This program compiles successfully but produce an error at runtime.
 
-// Error: Main method not found in class Hello, please define the main method as:
-//    public static void main(String[] args)
+// Error: Main method not found in class Hello, please define the main method
+// as:
+// public static void main(String[] args)
 // or a JavaFX application class must extend javafx.application.Application
 
-// Method - 3 (Interchanging the Access Modifier(static) and Datatype or returntype(void))
+// Method - 3 (Interchanging the Access Modifier(static) and Datatype or
+// returntype(void))
 
 public class Hello {
 
@@ -153,11 +156,11 @@ public class Hello {
 // output :
 
 // error: <identifier> expected
-//     public void static main(String[] args) {
+// public void static main(String[] args) {
 // error: '(' expected
-//     public void static main(String[] args) {
+// public void static main(String[] args) {
 // error: invalid method declaration; return type required
-//     public void static main(String[] args) {
+// public void static main(String[] args) {
 
 // Method - 4 (using abstract keyword)
 
@@ -171,6 +174,7 @@ public class Hello {
 // output :
 
 // error: illegal combination of modifiers: abstract and static
-//     abstract public static void main(String[] args) {
-// error: Hello is not abstract and does not override abstract method main(String[]) in Hello
-//     public class Hello       
+// abstract public static void main(String[] args) {
+// error: Hello is not abstract and does not override abstract method
+// main(String[]) in Hello
+// public class Hello
