@@ -203,3 +203,6 @@ public class Hello {
 
 // 5.main
 // Execution of Java Program starts here
+
+// 6.String[] args
+// Its a command line arguements
