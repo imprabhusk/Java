@@ -181,3 +181,7 @@ public class Hello {
 // public class Hello
 
 // Keywords and its Meaning :
+
+// 1.class
+// class keyword is used to declare a class
+// class is a Blueprint or Model or Template for creating an Object
