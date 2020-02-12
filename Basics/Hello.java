@@ -190,3 +190,8 @@ public class Hello {
 // It is an Access Specifier
 // It represents Visibility
 // Main method is visible to all classes
+
+// 3.static
+// It is an Access Modifier
+// If main method is declared static ,which means
+// main method is common for the entire program
