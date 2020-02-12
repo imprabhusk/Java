@@ -185,3 +185,8 @@ public class Hello {
 // 1.class
 // class keyword is used to declare a class
 // class is a Blueprint or Model or Template for creating an Object
+
+// 2.public
+// It is an Access Specifier
+// It represents Visibility
+// Main method is visible to all classes
