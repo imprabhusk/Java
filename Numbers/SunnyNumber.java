@@ -12,16 +12,34 @@ import java.util.Scanner;
 
 // Method - 1 
 
+// public class SunnyNumber {
+
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter the Number to Find Sunny Number Or Not : ");
+//         int number = input.nextInt();
+
+//         double squareRoot = Math.sqrt(number + 1);
+//         System.out
+//                 .print((int) squareRoot == squareRoot ? number + " is Sunny Number" : number + " is Not Sunny Number");
+//         input.close();
+//     }
+// }
+
+// Method - 2 (Using static method)
+
 public class SunnyNumber {
+    public static double sunny(int number) {
+        return Math.sqrt(number + 1);
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the Number to Find Sunny Number Or Not : ");
         int number = input.nextInt();
 
-        double squareRoot = Math.sqrt(number + 1);
-        System.out
-                .print(squareRoot == (int) squareRoot ? number + " is Sunny Number" : number + " is Not Sunny Number");
+        System.out.println(
+                (int) sunny(number) == sunny(number) ? number + " is Sunny Number" : number + " is Not Sunny Number");
         input.close();
     }
 }
