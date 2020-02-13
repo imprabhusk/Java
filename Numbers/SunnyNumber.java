@@ -7,3 +7,21 @@
 // Let's Take Given Number is 3
 // Adding 1 to it gives 4
 // Then Square Root of it becomes 2 which is Whole Number.
+
+import java.util.Scanner;
+
+// Method - 1 
+
+public class SunnyNumber {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number to Find Sunny Number Or Not : ");
+        int number = input.nextInt();
+
+        double squareRoot = Math.sqrt(number + 1);
+        System.out
+                .print(squareRoot == (int) squareRoot ? number + " is Sunny Number" : number + " is Not Sunny Number");
+        input.close();
+    }
+}
