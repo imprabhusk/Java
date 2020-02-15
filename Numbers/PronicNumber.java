@@ -11,26 +11,25 @@ import java.util.Scanner;
 
 // Method - 1
 
-// public class PronicNumber {
+public class PronicNumber {
 
-// public static void main(String[] args) {
-// Scanner input = new Scanner(System.in);
-// System.out.print("Enter the Number to Find Pronic Number Or Not : ");
-// int number = input.nextInt();
-// boolean flag = false;
-// int n = 1;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number to Find Pronic Number Or Not : ");
+        int number = input.nextInt();
+        boolean flag = false;
+        int n = 1;
 
-// for (int i = 1; i <= number; i++) {
-// if (n * (n + 1) == number)
-// flag = true;
-// n++;
-// }
+        for (int i = 1; i <= number; i++) {
+            if (n * (n + 1) == number)
+                flag = true;
+            n++;
+        }
 
-// System.out.println(flag == true ? number + " is Pronic Number" : number + "
-// is Not a Pronic Number");
-// input.close();
-// }
-// }
+        System.out.println(flag == true ? number + " is Pronic Number" : number + "is Not a Pronic Number");
+        input.close();
+    }
+}
 
 // Method - 2 (Using static Method)
 
