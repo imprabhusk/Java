@@ -12,30 +12,30 @@ import java.util.Scanner;
 
 // Method - 1 (Using Logic)
 
-// public class TrimorphicNumber {
+public class TrimorphicNumber {
 
-//     public static void main(String[] args) {
-//         Scanner input = new Scanner(System.in);
-//         System.out.print("Enter the Number to Find Trimorphic Or Not : ");
-//         int number = input.nextInt();
-//         int temp = number;
-//         boolean flag = true;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number to Find Trimorphic Or Not : ");
+        int number = input.nextInt();
+        int temp = number;
+        boolean flag = true;
 
-//         int cube = (int) Math.pow(number, 3);
+        int cube = (int) Math.pow(number, 3);
 
-//         while(number != 0){
-//             if(number % 10 != cube % 10){
-//                 flag = false;
-//                 break;
-//             }
-//             number /= 10;
-//             cube /= 10;
-//         }
+        while(number != 0){
+            if(number % 10 != cube % 10){
+                flag = false;
+                break;
+            }
+            number /= 10;
+            cube /= 10;
+        }
         
-//         System.out.println(flag ? temp + " is Trimorphic Number" : temp + " is Non Trimorphic Number");
-//         input.close();
-//     }
-// }
+        System.out.println(flag ? temp + " is Trimorphic Number" : temp + " is Non Trimorphic Number");
+        input.close();
+    }
+}
 
 // Method - 2 (Using static method)
 
