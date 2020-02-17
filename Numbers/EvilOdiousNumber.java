@@ -12,25 +12,25 @@ import java.util.Scanner;
 
 // Method - 1 (Using Logic)
 
-// public class EvilOdiousNumber {
+public class EvilOdiousNumber {
 
-//     public static void main(String[] args) {
-//         Scanner input = new Scanner(System.in);
-//         System.out.print("Enter the Number to Find Number is Evil or Odious Number : ");
-//         int number = input.nextInt();
-//         int temp = number;
-//         int count = 0;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number to Find Number is Evil or Odious Number : ");
+        int number = input.nextInt();
+        int temp = number;
+        int count = 0;
 
-//         while(number != 0){
-//             if(number % 2 == 1)
-//                 count++;
-//             number /= 2;
-//         }
+        while(number != 0){
+            if(number % 2 == 1)
+                count++;
+            number /= 2;
+        }
 
-//         System.out.println(count % 2 == 0 ? temp + " is Evil Number" : temp + " is Odious Number");
-//         input.close();
-//     }
-// }
+        System.out.println(count % 2 == 0 ? temp + " is Evil Number" : temp + " is Odious Number");
+        input.close();
+    }
+}
 
 // Method - 2 (Using static method)
 
@@ -43,7 +43,7 @@ public class EvilOdiousNumber {
                 count++;
             number /= 2;
         }
-        
+
         return count;
     }
 
