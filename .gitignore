@@ -1,4 +1,4 @@
 *.class
 *.vscode
 *.json
-*DS_Store
+*.DS_Store
