@@ -8,24 +8,24 @@ import java.util.Scanner;
 
 // Method - 1 (Using Logic)
 
-// public class ReverseNumber {
+public class ReverseNumber {
 
-//     public static void main(String[] args) {
-//         Scanner input = new Scanner(System.in);
-//         System.out.print("Enter the Number to Reverse : ");
-//         int number = input.nextInt();
-//         int append = 0;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number to Reverse : ");
+        int number = input.nextInt();
+        int append = 0;
 
-//         while(number != 0){
-//             int remainder = number % 10;
-//             append = (append * 10) + remainder;
-//             number /= 10;
-//         }
+        while(number != 0){
+            int remainder = number % 10;
+            append = (append * 10) + remainder;
+            number /= 10;
+        }
 
-//         System.out.println("Reversed Number is : " + append);
-//         input.close();
-//     }
-// }
+        System.out.println("Reversed Number is : " + append);
+        input.close();
+    }
+}
 
 // Method - 2 (Using static method)
 
