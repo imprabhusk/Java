@@ -15,27 +15,27 @@ import java.util.Scanner;
 
 // Method - 1 (Using Logic)
 
-// public class DuplicateNumberExists {
+public class DuplicateNumberExists {
 
-//     public static void main(String[] args) {
-//         Scanner input = new Scanner(System.in);
-//         System.out.print("Enter the Number to Find Duplicate Numbers Exists Or Not : ");
-//         int number = input.nextInt();
-//         int arr[] = new int[10];
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number to Find Duplicate Numbers Exists Or Not : ");
+        int number = input.nextInt();
+        int arr[] = new int[10];
         
-//         while(number > 0){
-//             int remainder = number % 10;
-//             arr[remainder]++;
-//             number /= 10;
-//         }
+        while(number > 0){
+            int remainder = number % 10;
+            arr[remainder]++;
+            number /= 10;
+        }
 
-//         for(int i = 0; i <= 9; i++){
-//             if(arr[i] > 1)
-//                 System.out.println("Number " + i + " occurs " + arr[i] + " times");
-//         }
-//         input.close();
-//     }
-// }
+        for(int i = 0; i <= 9; i++){
+            if(arr[i] > 1)
+                System.out.println("Number " + i + " occurs " + arr[i] + " times");
+        }
+        input.close();
+    }
+}
 
 // Method - 2 (Using static method)
 
