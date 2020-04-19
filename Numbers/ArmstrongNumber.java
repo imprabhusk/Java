@@ -85,6 +85,6 @@ public class ArmstrongNumber {
             temp /= 10;
         }
 
-        System.out.println((sum == number) ? number + " is an Armstrong Number" : number + " is not an Armstrong Number");
+        System.out.println(sum == number ? number + " is an Armstrong Number" : number + " is not an Armstrong Number");
     }
 }
