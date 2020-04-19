@@ -11,8 +11,6 @@
 // 1634 = 1 + 1296 + 81 + 256
 // 1634 = 1634
 
-// 153, 370, 371, 407 are the Armstrong Numbers.
-
 import java.util.Scanner;
 
 // Method - 1
@@ -40,7 +38,7 @@ public class ArmstrongNumber {
         }
 
         temp = number;
-        
+
         while(temp > 0){
             int rem = temp % 10;
             sum += findPower(rem, length);
@@ -53,40 +51,40 @@ public class ArmstrongNumber {
 
 // Method - 2 (Using Static Method)
 
-// public class ArmstrongNumber {
-//     public static int findLength(int number){
-//         int temp = number;
-//         int digit = 0;
+public class ArmstrongNumber {
+    public static int findLength(int number){
+        int temp = number;
+        int digit = 0;
 
-//         while(temp > 0){
-//             digit++;
-//             temp /= 10;
-//         }
-//         return digit;
-//     }
+        while(temp > 0){
+            digit++;
+            temp /= 10;
+        }
+        return digit;
+    }
 
-//     public static int findPower(int number, int power){
-//         int sum = 1;
-//         for(int i = 1; i <= power; i++)
-//             sum *= number;
-//         return sum;
-//     }
+    public static int findPower(int number, int power){
+        int sum = 1;
+        for(int i = 1; i <= power; i++)
+            sum *= number;
+        return sum;
+    }
 
-//     public static void main(String[] args) {
-//         Scanner input = new Scanner(System.in);
-//         System.out.print("Enter the Number to Find Armstrong Number or Not : ");
-//         int number = input.nextInt();
-//         int length = findLength(number);
-//         int temp = number;
-//         int rem = 0;
-//         int sum = 0;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number to Find Armstrong Number or Not : ");
+        int number = input.nextInt();
+        int length = findLength(number);
+        int temp = number;
+        int rem = 0;
+        int sum = 0;
 
-//         while(temp > 0){
-//             rem = temp % 10;
-//             sum += findPower(rem, length);
-//             temp /= 10;
-//         }
+        while(temp > 0){
+            rem = temp % 10;
+            sum += findPower(rem, length);
+            temp /= 10;
+        }
 
-//         System.out.println((sum == number) ? number + " is an Armstrong Number" : number + " is not an Armstrong Number");
-//     }
-// }
+        System.out.println((sum == number) ? number + " is an Armstrong Number" : number + " is not an Armstrong Number");
+    }
+}
