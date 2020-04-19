@@ -18,12 +18,14 @@ import java.util.Scanner;
 
 public class Triangle {
     public static float area(float length, float height){
-        return (float)(1/2) * (length * height);
+        return (1/2) * (length * height);
     }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.print("Enter the length of the Triangle : ");
         float length = input.nextInt();
+        System.out.print("Enter the height of the Triangle : ");
         float height = input.nextInt();
         System.out.println("Area of the Triangle is " + area(length, height));
     }
