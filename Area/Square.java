@@ -47,25 +47,3 @@ import java.util.Scanner;
 //         input.close();
 //     }
 // }
-
-// Method - 4 (Using Constructor)
-
-public class Square {
-    public Square(double side){
-        this.side = side;
-    }
-
-    public static double area(double side){
-        return side * side;
-    }
-
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter the sides of the Squares : ");
-        double side = input.nextDouble();
-
-        Square square = new Square(side);
-        System.out.println("Area of the Square is : " + square.area(side));
-        input.close();
-    }
-}
