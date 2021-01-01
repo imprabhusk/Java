@@ -11,7 +11,9 @@ public class EvenOrOdd {
         System.out.print("Enter the Number To Find Odd Or Even : ");
         int number = input.nextInt();
 
-        if (number % 2 == 0) {
+        if (number == 0) {
+            System.out.println(number + " is neither Even nor Odd");
+        } else if (number % 2 == 0) {
             System.out.println(number + " is Even Number");
         } else {
             System.out.println(number + " is Odd Number");
@@ -30,7 +32,9 @@ public class EvenOrOdd {
         System.out.print("Enter the Number To Find Odd Or Even : ");
         int number = input.nextInt();
 
-        if (number % 2 == 0)
+        if (number == 0)
+            System.out.println(number + " is neither Even nor Odd");
+        else if (number % 2 == 0)
             System.out.println(number + " is Even Number");
         else
             System.out.println(number + " is Odd Number");
@@ -48,7 +52,8 @@ public class EvenOrOdd {
         System.out.print("Enter the Number To Find Odd Or Even : ");
         int number = input.nextInt();
 
-        System.out.println(number % 2 == 0 ? (number + " is Even Number") : (number + " is Odd Number"));
+        System.out.println(number == 0 ? (number + " is neither Even nor Odd")
+                : number % 2 == 0 ? (number + " is Even Number") : (number + " is Odd Number"));
 
         input.close();
     }
@@ -67,9 +72,12 @@ public class EvenOrOdd {
         System.out.print("Enter the Number To Find Odd Or Even : ");
         int number = input.nextInt();
 
-        int result = isEvenOrOdd(number);
-
-        System.out.println(result == 0 ? (number + " is Even Number") : (number + " is Odd Number"));
+        if (number == 0)
+            System.out.println(number + " is neither Even nor Odd");
+        else {
+            int result = isEvenOrOdd(number);
+            System.out.println(result == 0 ? (number + " is Even Number") : (number + " is Odd Number"));
+        }
         input.close();
     }
 }
@@ -87,11 +95,13 @@ public class EvenOrOdd {
         System.out.print("Enter the Number To Find Odd Or Even : ");
         int number = input.nextInt();
 
-        EvenOrOdd evenOdd = new EvenOrOdd();
-
-        int result = evenOdd.isEvenOrOdd(number);
-        System.out.println(result == 0 ? (number + " is Even Number") : (number + " is Odd Number"));
-
+        if (number == 0)
+            System.out.println(number + " is neither Even nor Odd");
+        else {
+            EvenOrOdd evenOdd = new EvenOrOdd();
+            int result = evenOdd.isEvenOrOdd(number);
+            System.out.println(result == 0 ? (number + " is Even Number") : (number + " is Odd Number"));
+        }
         input.close();
     }
 }
