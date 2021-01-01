@@ -59,8 +59,6 @@ public class EvenOrOdd {
 public class EvenOrOdd {
 
     public static int isEvenOrOdd(int number) {
-        // System.out.println(number % 2 == 0 ? (number + " is Even Number") : (number +
-        // " is Odd Number"));
         return number % 2;
     }
 
