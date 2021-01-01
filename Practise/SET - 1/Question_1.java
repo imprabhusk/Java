@@ -1,0 +1,1 @@
+// Print the word with odd letters as cross type (X type)
