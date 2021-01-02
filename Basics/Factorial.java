@@ -26,26 +26,53 @@ import java.util.Scanner;
 
 // Method - 2 (Using while loop)
 
+// public class Factorial {
+
+//     public static int factorial(int number) {
+//         int fact = 1;
+//         int i = 1;
+
+//         if (number < 0)
+//             return -1;
+//         else {
+//             while (number > 0 && i <= number) {
+//                 fact *= i;
+//                 i++;
+//             }
+//         }
+//         return fact;
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter the number to find factorial : ");
+//         int number = input.nextInt();
+
+//         int result = factorial(number);
+
+//         System.out.println(result == -1 ? "Factorial of the negative number is undefined"
+//                 : "Factorial of the number " + number + " = " + result);
+
+//         input.close();
+//     }
+// }
+
+// // Method - 3 (Using Recursion)
+
 public class Factorial {
 
     public static int factorial(int number) {
-        int fact = 1;
-        int i = 1;
-
         if (number < 0)
             return -1;
-        else {
-            while (number > 0 && i <= number) {
-                fact *= i;
-                i++;
-            }
-        }
-        return fact;
+        else if (number == 0)
+            return 1;
+        else
+            return number * factorial(number - 1);
     }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter the number to find factorial : ");
+        System.out.print("Enter the Number to Find Factorial : ");
         int number = input.nextInt();
 
         int result = factorial(number);
@@ -56,24 +83,3 @@ public class Factorial {
         input.close();
     }
 }
-
-// // Method - 3 (Using Recursion Method)
-
-// public class Factorial {
-
-// public static void factorial(int number) {
-// int fact = 1;
-// int temp = number;
-// while(number > 0){
-// fact *= number--;
-// }
-// System.out.println("Factorial of the Number " + temp + " is " + fact);
-// }
-// public static void main(String[] args) {
-// Scanner input = new Scanner(System.in);
-// System.out.print("Enter the Number to Find Factorial : ");
-// int number = input.nextInt();
-// factorial(number);
-// input.close();
-// }
-// }
