@@ -41,7 +41,6 @@ public class Factorial {
             }
         }
         return fact;
-        // System.out.println("Factorial of the number " + number + " = " + fact);
     }
 
     public static void main(String[] args) {
